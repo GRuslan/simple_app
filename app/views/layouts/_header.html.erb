@@ -1,12 +1,13 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "sample app", root_path, id: "logo" %>
-      <nav>
-        <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Help", help_path %></li>
-          <% if signed_in? %>
+        <header>
+            <div class="inner">
+                <nav>
+                    <ul type="square">
+                        <li><a  href="index.html">Головна<br><span class="_bg"></span></a></li>
+                       
+                        <li><a  href="furniture.html">Меблі<br><span class="_bg"></span></a></li>
+                        <li><a  href="price.html">Схема роботи<span class="_bg"></span></a></li>
+                        <li class="last"><a  href="contacts.html">Контакти<br><span class="_bg"></span></a></li>   
+                        <% if signed_in? %>
             <li><%= link_to "Users", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -22,10 +23,9 @@
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "Sign in", signin_path %></li>
-          <% end %>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+         
+          <% end %>         
+                    </ul>
+                </nav>      
+            </div>
+        </header>
